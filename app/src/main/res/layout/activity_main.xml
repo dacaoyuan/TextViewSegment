@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="安卓自带的解析HTML："
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.3"
+            android:text="@string/html1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv011"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/html2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第三方框架解析HTML，很不错："
+            android:textColor="@color/colorPrimary" />
+
+
+        <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:id="@+id/html_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="html-textview 框架，地址：https://github.com/SufficientlySecure/html-textview"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="安卓原生的方法："
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1.分段显示不同颜色字体分段显示不同颜色字体，通过 ForegroundColorSpan 来实现"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2.分段显示不同背景色的字体，段显示不同背景色的字体，通过BackgroundColorSpan来实现"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="3.分段显示不同字体大小，分段显示不同字体大小，通过 AbsoluteSizeSpan 来实现"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="4.分段显示相对的字体大小，就是字体大小的多少倍，通过 RelativeSizeSpan 来实现"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="5.分段添加删除线，通过 StrikethroughSpan 来实现"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="6.分段添加下划线，通过 UnderlineSpan  来实现"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="7.分段显示图标，不能设置lineSpacingMultiplier(行距)属性，否则位置出现偏差，通过 ImageSpan 来实现"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="8.分段显示图标，可以设置lineSpacingMultiplier(行距)属性，不会出现偏差，通过 自定义ImageSpan 来实现"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="9.点击事件相关的Span，默认自带下划线和字体颜色，颜色与主题的colorAccent颜色有关，通过 ClickableSpan 来实现"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="10.效果的叠加,关键方法：SpannableStringBuilder"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="属性："
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shuxing" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_shuxing2" />
+    </LinearLayout>
+</ScrollView>
+

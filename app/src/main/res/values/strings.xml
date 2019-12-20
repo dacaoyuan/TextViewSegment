@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextViewSegment</string>
+    <string name="html2">2.分段显示图标,不能设置行距，否则位置错乱，关键方法：Html.fromHtml</string>
+    <string name="html1">1.分段显示不同颜色的字体,通过解析HTML来实现。关键方法：Html.fromHtml</string>
+</resources>
