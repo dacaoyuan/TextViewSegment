@@ -10,11 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/mTextView"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp" />
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/mTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111dddddddddddddddddd" />
+
+            <View
+                android:layout_width="@dimen/x10"
+                android:layout_height="@dimen/x10"
+                android:layout_marginTop="@dimen/x15"
+                android:background="@drawable/ic_solid_red_oval" />
+        </FrameLayout>
+
 
     </androidx.core.widget.NestedScrollView>
 
