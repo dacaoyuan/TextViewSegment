@@ -2,4 +2,13 @@
     <string name="app_name">TextViewSegment</string>
     <string name="html2">2.分段显示图标,不能设置行距，否则位置错乱，关键方法：Html.fromHtml</string>
     <string name="html1">1.分段显示不同颜色的字体,通过解析HTML来实现。关键方法：Html.fromHtml</string>
+    <string name="title_activity_html">HtmlActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

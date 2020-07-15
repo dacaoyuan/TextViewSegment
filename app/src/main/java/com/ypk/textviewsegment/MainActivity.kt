@@ -22,5 +22,14 @@ class MainActivity : AppCompatActivity() {
         button2.setOnClickListener {
             startActivity(Intent(MainActivity@ this, ToolActivity::class.java))
         }
+
+
+        button3.setOnClickListener {
+            startActivity(Intent(MainActivity@ this, PopupWindowActivity::class.java))
+        }
+        button4.setOnClickListener {
+            startActivity(Intent(MainActivity@ this, HtmlActivity::class.java))
+        }
+
     }
 }

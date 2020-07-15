@@ -20,4 +20,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/x180"
         android:text="工具封装" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x180"
+        android:text="带图片带字体颜色的html加载" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x180"
+        android:text="PopupWindow工具封装(未完成)"
+        android:textAllCaps="false" />
 </LinearLayout>
