@@ -2,10 +2,13 @@ package com.ypk.textviewsegment
 
 import android.os.Build
 import android.os.Bundle
+import android.text.Html
 import android.text.method.LinkMovementMethod
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.ypk.textviewsegment.widget.html.DetailTagHandler
 import com.ypk.textviewsegment.widget.html.HtmlUtils
+import com.ypk.textviewsegment.widget.html.URLImageParser
 import kotlinx.android.synthetic.main.activity_html.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,19 +26,16 @@ class HtmlActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_html)
 
-        /* mTextView.setText(
+         mTextView.setText(
              Html.fromHtml(
                  strHtml,
-                 Html.FROM_HTML_MODE_LEGACY, URLImageParser(this, mTextView), null
+                 Html.FROM_HTML_MODE_LEGACY, URLImageParser(this, mTextView), DetailTagHandler(this)
              )
-         )*/
-        HtmlUtils.getInstance(this, mTextView).setHtmlWithPic(strHtml)
+         )
+        //HtmlUtils(this, mTextView).setHtmlWithPic(strHtml)
         mTextView.movementMethod = LinkMovementMethod.getInstance()//不设置 点击事件不生效
 
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        HtmlUtils.instance = null
-    }
+
 }

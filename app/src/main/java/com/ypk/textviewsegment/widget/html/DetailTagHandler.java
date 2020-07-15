@@ -8,6 +8,7 @@ import android.text.TextPaint;
 import android.text.style.ClickableSpan;
 import android.text.style.ImageSpan;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -74,6 +75,7 @@ public class DetailTagHandler implements Html.TagHandler {
 
         @Override
         public void onClick(View widget) {
+            Toast.makeText(context, "点击了第 " + position, Toast.LENGTH_SHORT).show();
             System.out.println("DetailTagHandler.onClick  position=" + position);
            /* Intent intent = new Intent(context, PhotoActivity.class);
             intent.putStringArrayListExtra("url", strings);
