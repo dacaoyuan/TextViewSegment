@@ -19,7 +19,9 @@
                 android:id="@+id/mTextView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111dddddddddddddddddd" />
+                android:lineSpacingMultiplier="1.3"
+                android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111dddddddddddddddddd"
+                android:textColor="#333333" />
 
             <View
                 android:layout_width="@dimen/x10"
