@@ -2,10 +2,12 @@ package com.ypk.textviewsegment
 
 import android.os.Build
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.ypk.textviewsegment.widget.html.HtmlUtils
 import kotlinx.android.synthetic.main.activity_html.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class HtmlActivity : AppCompatActivity() {
 
@@ -28,7 +30,7 @@ class HtmlActivity : AppCompatActivity() {
              )
          )*/
         HtmlUtils.getInstance(this, mTextView).setHtmlWithPic(strHtml)
-
+        mTextView.movementMethod = LinkMovementMethod.getInstance()//不设置 点击事件不生效
 
     }
 

@@ -19,7 +19,9 @@ import java.util.Locale;
 /**
  * @Author: YuanPeikai
  * @CreateDate: 2020/7/15 9:56
- * @Description: 测试发现，该方法，给图片设置不了点击事件
+ * @Description: 亲测可以，
+ * 注意：最后textView 一定要设置
+ * mTextView.movementMethod = LinkMovementMethod.getInstance()//不设置 点击事件不生效
  */
 public class DetailTagHandler implements Html.TagHandler {
     private Context context;
@@ -37,17 +39,12 @@ public class DetailTagHandler implements Html.TagHandler {
 
 
         if ("img".equals(tag.toLowerCase(Locale.getDefault()))) {
-
             // 获取长度
             int len = output.length();
-            System.out.println("DetailTagHandler.handleTag len=" + len);
             // 获取图片地址
             ImageSpan[] images = output.getSpans(len - 1, len, ImageSpan.class);
             String imgURL = images[0].getSource();
-            System.out.println("DetailTagHandler.handleTag imgURL=" + imgURL);
-
-            ImageSpan image = images[0];
-
+            System.out.println("DetailTagHandler.handleTag imgURL=" + imgURL + "len=" + len);
 
             // 记录所有图片地址
             strings.add(imgURL);
